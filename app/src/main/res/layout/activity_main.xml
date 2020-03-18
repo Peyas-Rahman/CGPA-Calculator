@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".MainActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/resultTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/result_bg"
+                android:elevation="15dp"
+                android:paddingStart="36dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="36dp"
+                android:paddingBottom="8dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/btnClear"
+                app:layout_constraintStart_toStartOf="@+id/btnCalculate"
+                app:layout_constraintTop_toBottomOf="@+id/btnClear" />
+
+            <EditText
+                android:id="@+id/semester1"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/result_shape"
+                android:ems="10"
+                android:hint="1st Semester"
+                android:inputType="numberDecimal"
+                android:maxLength="4"
+                android:paddingLeft="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="#63000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <EditText
+                android:id="@+id/semester2"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/result_shape"
+                android:ems="10"
+                android:hint="2nd Semester"
+                android:inputType="numberDecimal"
+                android:maxLength="4"
+                android:paddingLeft="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="#63000000"
+                app:layout_constraintBottom_toBottomOf="@+id/semester1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/semester1"
+                app:layout_constraintTop_toTopOf="@+id/semester1" />
+
+
+            <EditText
+                android:id="@+id/semester3"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/result_shape"
+                android:ems="10"
+                android:hint="3rd Semester"
+                android:inputType="numberDecimal"
+                android:maxLength="4"
+                android:paddingLeft="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="#63000000"
+                app:layout_constraintEnd_toEndOf="@+id/semester1"
+                app:layout_constraintStart_toStartOf="@+id/semester1"
+                app:layout_constraintTop_toBottomOf="@+id/semester1" />
+
+            <EditText
+                android:id="@+id/semester4"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/result_shape"
+                android:ems="10"
+                android:hint="4th Semester"
+                android:inputType="numberDecimal"
+                android:maxLength="4"
+                android:paddingLeft="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="#63000000"
+                app:layout_constraintEnd_toEndOf="@+id/semester2"
+                app:layout_constraintStart_toStartOf="@+id/semester2"
+                app:layout_constraintTop_toBottomOf="@+id/semester2" />
+
+            <EditText
+                android:id="@+id/semester5"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/result_shape"
+                android:ems="10"
+                android:hint="5th Semester"
+                android:inputType="numberDecimal"
+                android:maxLength="4"
+                android:paddingLeft="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="#63000000"
+                app:layout_constraintEnd_toEndOf="@+id/semester3"
+                app:layout_constraintStart_toStartOf="@+id/semester3"
+                app:layout_constraintTop_toBottomOf="@+id/semester3" />
+
+            <EditText
+                android:id="@+id/semester6"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/result_shape"
+                android:ems="10"
+                android:hint="6th Semester"
+                android:inputType="numberDecimal"
+                android:maxLength="4"
+                android:paddingLeft="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="#63000000"
+                app:layout_constraintEnd_toEndOf="@+id/semester4"
+                app:layout_constraintStart_toStartOf="@+id/semester4"
+                app:layout_constraintTop_toBottomOf="@+id/semester4" />
+
+            <EditText
+                android:id="@+id/semester7"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/result_shape"
+                android:ems="10"
+                android:hint="7th Semester"
+                android:inputType="numberDecimal"
+                android:maxLength="4"
+                android:paddingLeft="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="#63000000"
+                app:layout_constraintEnd_toEndOf="@+id/semester5"
+                app:layout_constraintStart_toStartOf="@+id/semester5"
+                app:layout_constraintTop_toBottomOf="@+id/semester5" />
+
+            <EditText
+                android:id="@+id/semester8"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/result_shape"
+                android:ems="10"
+                android:hint="8th Semester"
+                android:inputType="numberDecimal"
+                android:maxLength="4"
+                android:paddingLeft="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textColorHint="#63000000"
+                app:layout_constraintEnd_toEndOf="@+id/semester6"
+                app:layout_constraintStart_toStartOf="@+id/semester6"
+                app:layout_constraintTop_toBottomOf="@+id/semester6" />
+
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_bg"
+                android:onClick="clearAll"
+                android:text="RESET"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@+id/btnCalculate"
+                app:layout_constraintEnd_toEndOf="@+id/semester8"
+                app:layout_constraintStart_toStartOf="@+id/semester8"
+                app:layout_constraintTop_toTopOf="@+id/btnCalculate" />
+
+            <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:background="@drawable/btn_shape"
+                android:onClick="Calculate"
+                android:text="SUBMIT"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@+id/semester7"
+                app:layout_constraintStart_toStartOf="@+id/semester7"
+                app:layout_constraintTop_toBottomOf="@+id/semester7" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:text="Enter Your SGPA"
+                android:textColor="#FFFFFF"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginTop="3dp"
+                android:background="#D3FFFFFF"
+                app:layout_constraintEnd_toEndOf="@+id/textView"
+                app:layout_constraintStart_toStartOf="@+id/textView"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:elevation="16dp"
+        app:adSize="BANNER"
+        app:adUnitId="ca-app-pub-8690549944486384/1572870037"
+        app:layout_constraintBottom_toBottomOf="@+id/nestedScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"></com.google.android.gms.ads.AdView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
