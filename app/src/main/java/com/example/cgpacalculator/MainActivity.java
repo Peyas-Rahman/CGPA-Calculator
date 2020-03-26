@@ -143,14 +143,17 @@ import java.util.ArrayList;
                 int v = 0;
                 if (i >= 0 && i <= 2) {
                     v = 5;
-                } else if (i > 2 && i < 5) {
+                } else if (i == 3) {
+                    v = 10;
+                }
+                else if (i == 4) {
                     v = 15;
                 } else if (i == 5) {
                     v = 20;
                 } else if (i == 6) {
                     v = 25;
                 } else if (i == 7) {
-                    v = 10;
+                    v = 15;
                 }
                 sum_of_v=v+sum_of_v;
                 sum = sum + (values.get ( i ) * v);
